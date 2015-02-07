@@ -1,0 +1,97 @@
+/* Include this file in your html if you are using the CSP mode. */
+
+@charset "UTF-8";
+
+
+
+@font-face {
+    font-family: 'bebasbold';
+    src: url('../fonts/bebasneue_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'bebaslight';
+    src: url('../fonts/bebasneue_light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bebasregular';
+    src: url('../fonts/bebasneue_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+@media (min-width: 1200px) {
+  body > .container {
+    width: 95%;
+  }
+}
+
+.col-md-8 {
+  width: 60%;
+}
+
+.col-md-4 {
+  width: 40%;
+}
+
+input::-webkit-input-placeholder {
+  color: white !important;
+  font-style: italic;
+  font-family: 'bebasregular', helvetica, sans-serif;
+   text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+
+}
+
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak],
+.ng-cloak, .x-ng-cloak,
+.ng-hide {
+  display: none !important;
+}
+
+ng\:form {
+  display: block;
+}
+
+body {
+  background-color: #FFF;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  font-family: helvetica, sans-serif;
+  color: #444;
+}
+
+body > .container {
+  padding:20px;
+}
+
+h1, h2, h3 {
+   font-family: 'bebasregular', helvetica, sans-serif;
+}
+
+strong {
+  font-family: 'bebasregular';
+  letter-spacing: 2px;
+}
+
+a, a:hover {
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.progress {
+  background-color: #ccc;
+}

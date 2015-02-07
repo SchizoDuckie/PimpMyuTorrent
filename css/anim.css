@@ -1,0 +1,11 @@
+.event {
+  max-height: 50px;
+  overflow: hidden;
+ -webkit-animation: anim 1s ease-in-out;
+}
+
+
+@-webkit-keyframes anim {
+  from { opacity: 0; max-height: 0px; }
+  to { opacity:1; max-height: 50px;  }
+}
