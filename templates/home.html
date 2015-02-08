@@ -1,15 +1,31 @@
-<div class="row">
-  <div ng-class='col-md-12'>
-    <div class="container-fluid">
-       
-       <button ng-click="Pair()">Connect to uTorrent</button>
-       
-       <div ng-if="rpc.settings.set">
-          <button ng-click="pimp()">Pimp it!</button>
+<div style='font-size:18px'>
+<h1>Want to get rid of the annoying ads in µTorrent?</h1>    
 
-          <button ng-click="unpimp()">UnPimp it!</button>
-       </div>
+<p>You've come to the right place, I'm about to pimp your µTorrent!
+</p>
+<p>
+All you have to do is make sure that µTorrent is running, click the 'Pimp My µTorrent' button below, grant the permission in µTorrent (a dialog will pop up) sit back and relax!</p>
+<center><button style='font-size:40px; display:block; color:green' ng-click="Pair()">Pimp My µTorrent!</button>
+<small>Sorry mac users, windows only</small>
+</center>
+<div ng-if="success">
+  <h1 style='color:green'>You've just been pimped!</h1>
+  <p><strong> You may need to restart µTorrent if not all the changes are visible right away.</strong></p>
 
-    </div>
-  </div>
+  <p><small>If you don't like what was done here, you can always undo the changes that Pimp My µTorrent made (but why the hell would you do that?)  <button ng-click="unpimp()">Unpimp my Torrent</button></small></p>
+</div>
+
+<h2 style='margin-top:60px;'>So, wait, wut? No downloads? No step by step tutorial? What type of sorcery is this?</h2>
+
+<p>It's Javascript Magic. A couple of years ago BitTorrent (the company that owns µTorrent) decided to experiment with <a href="http://torque.bittorent.com" title="half-broken site" target="_blank">bringing Torrent support to the browser using a verion of µTorrent that runs without a User Interface, called Torque</a>, and then kind of abandoned it. (frankly, it kinda sucked)</p>
+
+<p>The promise it made was beautiful though, so I reverse engineered it, and took it to the next level when I found out that the protocol it talks is embedded in the µTorrent and BitTorrent clients to this day. The result is <a href="https://schizoduckie.github.io/DuckieTorrent/">DuckieTorrent, an angular.js module</a> that I use in <a href="https://schizoduckie.github.io/DuckieTV/" target="_blank">DuckieTV</a> 
+
+<p>All that the code does on this page is connect to your µTorrent client and change the relevant hidden settings.</p>
+
+<h2>So, what's the catch?</h2>
+<p>
+There is no catch, this is free and effortless because this is the way BitTorrent built their application. It's been a public secret for years that it is possible to do this. If you want to find out more, <a href="http://forum.utorrent.com/topic/81421-321-how-to-turn-off-ads-except-for-the-silly-upgrade-banner/page-3" target="_blank">you can read about it on the µTorrent forums</a>
+</p></div>
+
 </div>

@@ -1,20 +1,132 @@
-<!doctype html>
-<html ng-app="DuckieTorrent">
+<!DOCTYPE html>
+<html dir="ltr" lang="en" ng-app="PimpMyµTorrent">
 <head>
-  <meta charset="UTF-8">
-  <title>DuckieTorrent</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pimp my uTorrent : An angular.js application that remove the ads in uTorrent with a single click</title>
+  <meta name="keywords" content="uTorrent, µtorrent, adblock, banners, ads, block, remove, DuckieTV, torrents, torque, bittorrent, duckietorrent, angularjs, html5, javascript">
+  <meta name="description" content="A web-application that removes your uTorrent ads with just 2 clicks and no downloads!">
+  <link rel="stylesheet" href="combo.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/icon256.png">
+</head>
 <body>
-  <div class="container">
-    <div data-ng-view></div> 
-  </div>
+  <div id="main">
+
+    <span id="forkongithub">
+      <a href="https://github.com/SchizoDuckie/PimpMyuTorrent/" class="bg-blue">
+        Fork me on GitHub
+      </a>
+    </span>
+
+    
+      
+      <div id="landing" class="section p-landing"  style="background-image:url( img/background.png); background-position: center center;background-size:cover; height:550px">
   
+         
+      </div>
+  
+      <div id="utorrent" class="section p-utorrent"  style="">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa  fa-c fa-stack-1x">
+            
+             <img src="img/utorrent.png" style="display:block; width: 234px; height: 234px; top: 30px; left: 18px; position: absolute; ">
+             
+
+            </i>
+          </span>
+           
+        </div>
+        
+        <div class="container ">
+          <div ng-view></div>     
+        </div>
+      </div>
+
+      <div id="duckietv" class="section p-duckietv"  >
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa  fa-c fa-stack-1x">
+            
+             <img src="img/duckietv.png" style="display:block; position: absolute; left:30px; top: 40px;">
+             
+            </i>
+          </span>
+           
+        </div>
+        
+        <div class="container " style='font-size:15px;'>
+         <h1>Like µTorrent? You'll love DuckieTV!</h1> 
+         DuckieTV is a personalized calendar that tracks the shows you like, can search on multiple torrent sites, gives you full control over what you download and how, values your privacy, and runs in your Chrome or Opera browser and standalone on Windows, Mac and Linux.
+
+         <a target="_blank" href='https://schizoduckie.github.io/DuckieTV/' style='display:block; padding-top:10px; color:black; font-weight:bold; font-size:18px;'>Tickled your interest? Click here to read more about DuckieTV
+         <img src="img/duckietv.jpg" title="DuckieTV TV-Show Calendar"></a> 
+        </div>
+      </div>
+    
+      
+      <div id="angularjs" class="section p-angularjs"  style="background-image:url( ); background-size:cover;">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa  fa-c fa-stack-1x">
+            
+             <img src="img/angularjs.png" style="display:block; width: 234px; height: 234px; top: 30px; left: 18px; position: absolute; ">
+             
+            </i>
+          </span>
+           
+        </div>
+        
+        <div class="container " style="background-color: ">
+          <h1 id="built-with-angularjs">Built with AngularJS</h1>
+
+        </div>
+      </div>
+    
+
+
+    <div id="footer" class="section text-white">
+      <div class="container">
+        
+        
+<p>Design by Tim O'Brien <a href="http://t413.com/">t413.com</a>
+
+<a href="https://github.com/t413/SinglePaged">SinglePaged theme</a>
+
+this site is <a href="https://github.com/SchizoDuckie/PimpMyuTorrent">open source</a></p>
+
+
+      </div>
+    </div>
+  </div>
+
   <script src="./js/vendor/angular.min.js"></script>
   <script src="./js/vendor/angular-route.min.js"></script>
   <script src="./js/controllers.js"></script>
   <script src="./js/duckietorrent.torrent.js"></script>
   <script src="./js/app.js"></script>
- </body>
-</html>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-59487975-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+
+</html> 
