@@ -22,6 +22,12 @@ angular.module('DuckieTorrent.controllers', ['DuckieTorrent.torrent'])
         };
 
         $scope.Pair = function() {
+            
+            if(window.location.protocol.indexOf("https") > -1) {
+                if(confirm("Sorry, Pimp My uTorrent only works on HTTP due to restrictions. please click 'OK' to be directed to the http version and please try again.")) {
+                    window.location.href = 'http://schizoduckie.github.io/PimpMyuTorrent/?from=https';        
+                }
+            }
             uTorrent.AutoConnect().then(function() {
                 $scope.rpc = uTorrent.getRemote();
 
