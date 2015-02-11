@@ -26,6 +26,8 @@ angular.module('DuckieTorrent.controllers', ['DuckieTorrent.torrent'])
             if(window.location.protocol.indexOf("https") > -1) {
                 if(confirm("Sorry, Pimp My uTorrent only works on HTTP due to restrictions. please click 'OK' to be directed to the http version and please try again.")) {
                     window.location.href = 'http://schizoduckie.github.io/PimpMyuTorrent/?from=https';        
+                } else {
+                    alert('Pimp My uTorrent does not work on HTTPS!! You can only browse the page and read!');
                 }
             }
             uTorrent.AutoConnect().then(function() {
