@@ -76,8 +76,7 @@ angular.module('DuckieTorrent.controllers', ['DuckieTorrent.torrent'])
          */
          $scope.noPro = function() { 
             $scope.rpc.settings.set('gui.pro_installed', false).then(function(result) {
-                 console.log('Set ', key, 'to', pimpValues[key], 'Result:', result.btapp.settings.set);
-                 _gaq.push(['_trackEvent', 'noPro', 'Success']);
+                _gaq.push(['_trackEvent', 'noPro', 'Success']);
             });
          }
                
