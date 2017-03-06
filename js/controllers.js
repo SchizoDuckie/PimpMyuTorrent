@@ -18,7 +18,9 @@ angular.module('DuckieTorrent.controllers', ['DuckieTorrent.torrent'])
             'gui.show_plus_av_upsell': false,
             'offers.content_offer_autoexec': false,
             'offers.featured_content_notifications_enabled': false,
-            'offers.featured_content_rss_enabled': false
+            'offers.featured_content_rss_enabled': false,
+            'offers.upgrade_panel': false,
+            'offers.upgrade_toolbar': false
         };
 
         $scope.Pair = function() {
