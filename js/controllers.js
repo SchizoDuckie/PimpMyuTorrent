@@ -20,7 +20,14 @@ angular.module('DuckieTorrent.controllers', ['DuckieTorrent.torrent'])
             'offers.featured_content_notifications_enabled': false,
             'offers.featured_content_rss_enabled': false,
             'offers.upgrade_panel': false,
-            'offers.upgrade_toolbar': false
+            'offers.upgrade_toolbar': false,
+            'gui.show_plus_conv_upsell': false,
+            'offers.content_offer_url': '',
+            'bt.enable_pulse': false,
+            'distributed_share.enable': false,
+            'gui.show_notorrents_node': false,
+            'sponsored_torrent_offer_enabled': false,
+            'left_rail_offer': false
         };
 
         $scope.Pair = function() {
