@@ -9,10 +9,10 @@ It's been a public secret for years that μTorrent's ever more invasive ads and 
 I've reverse-engineered uTorrent's Torque API last year, and decided to take it a step further by implementing the possibility to change settings.
 
 Go check it out here:
-https://SchizoDuckie.github.io/PimpMyuTorrent/
+http://SchizoDuckie.github.io/PimpMyuTorrent/
 
 To find out how this works, check out DuckieTorrent
-https://SchizoDuckie.github.io/DuckieTorrent/
+http://SchizoDuckie.github.io/DuckieTorrent/
 
 To find out more about Torque, you can check the (mostly defunct) website:
 http://torque.bittorrent.com/
